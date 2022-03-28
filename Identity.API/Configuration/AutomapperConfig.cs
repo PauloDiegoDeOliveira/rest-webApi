@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Identity.API.ViewModels;
+using Identity.Business.Models;
 
 namespace Identity.API.Configuration
 {
@@ -6,6 +8,7 @@ namespace Identity.API.Configuration
     {
         public AutomapperConfig()
         {
+            CreateMap<Fornecedor, FornecedorViewModel>().ReverseMap();
         }
     }
 }
